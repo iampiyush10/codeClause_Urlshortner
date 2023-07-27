@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #800080;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+#shorten {
+    background-color: #800080;
+    margin-left: 10px;
+}
+
+#shorten:hover {
+    background-color: #6a006a;
+}
+
+.result-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"][readonly] {
+    flex: 1;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    color: #555;
+}
+
+#copy {
+    margin-left: 10px;
+    background-color: #800080;
+}
+
+#copy:hover {
+    background-color: #6a006a;
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styling for smaller screens */
+    .container {
+        max-width: 90%;
+    }
+}
